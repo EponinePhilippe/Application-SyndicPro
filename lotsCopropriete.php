@@ -24,8 +24,9 @@
   <div class="jumbotron">
     <div class="container">
       <section class="col-sm-8">
-      
-        <h1>Liste des lots:</h1>
+        <br>
+        <h1>Liste des lots</h1>
+        <br>
         <div class="row">
 
 
@@ -50,8 +51,6 @@
       </section>
     </div>
   </div>
-
-  <?php include('includeLst/footerLst.php'); ?>
 
 </body>
 

@@ -22,7 +22,9 @@
   <div class="jumbotron">
     <div class="container">
       <section>
+        <br>
         <h1>Les Copropriétés</h1>
+        <br>
         <div class="row">
 
           <?php
@@ -51,8 +53,6 @@
       </section>
     </div>
   </div>
-
-  <?php include('includeLst/footerLst.php'); ?>
 
 </body>
 

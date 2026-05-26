@@ -24,8 +24,9 @@
   <div class="jumbotron">
     <div class="container">
       <section class="col-sm-8">
-      
-        <h1>Liste des lots:</h1>
+        <br>
+        <h1>Liste des lots</h1>
+        <br>
         <div class="row">
 
           <?php
@@ -37,8 +38,7 @@
               <div class="card" style="width: 20rem;">
                 <div class="card-body">
                     <h5 class="card-text"><h5>
-                    <p class="card-text"><?php echo "<b> Localisation : ".$localisation."<br> Tantième : ".$tantieme ."</b>"?></p>
-                    <a href="fonds.php?idCoproprietaire=<?php echo $idCoproprietaire ?>" class="card-link">Voir les fonds</a>                 
+                    <p class="card-text"><?php echo "<b> Localisation : ".$localisation."<br> Tantième : ".$tantieme ."</b>"?></p>                
                   </div>
               </div>
 
@@ -51,8 +51,6 @@
       </section>
     </div>
   </div>
-
-  <?php include('includeLst/footerLst.php'); ?>
 
 </body>
 

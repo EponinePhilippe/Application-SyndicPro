@@ -22,7 +22,9 @@
   <div class="jumbotron">
     <div class="container">
       <section>
+        <br>
         <h1>Les Copropriétaires</h1>
+        <br>
         <div class="row">
 
           <?php
@@ -49,7 +51,6 @@
                       } ?>
                     <?php echo "Sexe : ". $a . "<br> Nom : ". $nom . "<br>Prénom : ".$prenom."<br>Rue : " . $rue . "<br>Code Postal : " . $cp . "<br>Ville : " . $ville . "<br> Telephone : " . $telephone?></p>
                     <a href="lotsCoproprietaire.php?idCoproprietaire=<?php echo $idCoproprietaire ?>" class="card-link">Voir les lots</a> 
-                    <a href="fonds.php?idCoproprietaire=<?php echo $idCoproprietaire ?>" class="card-link">Voir les fonds</a> 
                     <h5>
                 </div>
               </div>
@@ -61,8 +62,6 @@
       </section>
     </div>
   </div>
-
-  <?php include('includeLst/footerLst.php'); ?>
 
 </body>
 

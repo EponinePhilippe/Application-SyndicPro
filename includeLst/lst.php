@@ -62,6 +62,30 @@ function getLesDevis($bdd)
     return $LesDevis;
 };
 
+function getLesPrestataires($bdd)
+{
+    $req = "SELECT DISTINCT prestataire FROM devis";
+    $res = $bdd->query($req);
+    $LesPrestataires = $res->fetchAll();
+    return $LesPrestataires;
+}
+
+function getLesTravaux($bdd)
+{
+    $req = "SELECT * FROM travaux";
+    $res = $bdd->query($req);
+    $LesTravaux = $res->fetchAll();
+    return $LesTravaux;
+}
+
+function ajouterDevis($bdd, $dateDev, $prestataire, $MontantTTC, $vote, $idTravaux, $idCopropriete)
+{
+    $req = "INSERT INTO devis(dateDev, prestataire, MontantTTC, vote, idTravaux, idCopropriete)
+    VALUES ('$dateDev', '$prestataire', $MontantTTC, '$vote', $idTravaux, $idCopropriete)";
+    $res = $bdd->query($req);
+    return $res;
+}
+
 // function getAppelsFonds($bdd, $idDevis, $pourcentage)
 // {
 //     $sql = "SELECT c.idCoproprietaire, c.nom, c.prenom, SUM(tantieme) AS totalTantiemes

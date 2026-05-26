@@ -54,7 +54,6 @@
 </div>
 
 <?php } ?>
- <?php include('includeLst/footerLst.php'); ?>
 
 </body>
 
